@@ -31,6 +31,22 @@ public class TestColecciones1 {
 		}
 		System.out.println(c1);
 		//Apartado 5
+		double menor=c1.getArrayDoubles()[0];
+		for (double d : arrayDoubles) {
+			if(d<menor) {
+				menor = d;
+			}
+		}
+		System.out.println("El valor mas pequeño del array es: "+menor);
+		//Apartado 6
+		int contador=1;
+		for (double d : arrayDoubles) {
+			System.out.printf("%8.2f",d);
+			if(contador % 4 ==0 && contador!=0) {
+				System.out.println();
+			}
+			contador++;
+		}
 		
 	}
 
